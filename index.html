@@ -3,106 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Stack Diagram</title>
+    <title>Project Roadmap</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f4f4f9;
-            padding-top :2em;
+            padding: 20px;
+            margin: 0;
         }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            max-width: 400px;
+        .roadmap-container {
+            max-width: 800px;
             margin: 0 auto;
-        }
-        .box {
             background-color: #fff;
-            border: 1px solid #ddd;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
         }
-        .box h2 {
-            margin-top: 0;
-            font-size: 1.2em;
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007bff;
             border-bottom: 2px solid #007bff;
             padding-bottom: 5px;
+            margin-top: 20px;
         }
-        .box ul {
+        h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        ul {
             list-style-type: none;
             padding: 0;
         }
-        .box ul li {
-            padding: 5px 0;
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
         }
-        .arrow {
-            text-align: center;
-            font-size: 1.5em;
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
             color: #007bff;
+        }
+        .simplified-design {
+            margin-top: 40px;
+        }
+        .simplified-design h2 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h2>Frontend</h2>
+    <div class="roadmap-container">
+        <h1>Project Roadmap</h1>
+
+        <h2>1. Planning and Requirements Gathering</h2>
+        <ul>
+            <li><strong>Define Objectives</strong>: Determine the key features and functionalities your system should have.</li>
+            <li><strong>User Roles</strong>: Identify different user roles such as administrators, teachers, students, and parents.</li>
+            <li><strong>Functional Requirements</strong>: List out all the functionalities like student enrollment, class scheduling, grade management, attendance tracking, etc.</li>
+            <li><strong>Non-Functional Requirements</strong>: Consider performance, security, and scalability.</li>
+        </ul>
+
+        <h2>2. Design</h2>
+        <ul>
+            <li><strong>Wireframes and Mockups</strong>: Create basic wireframes and mockups for the user interface.</li>
+            <li><strong>Database Design</strong>: Plan the database schema. Define tables for users, classes, grades, attendance, etc.</li>
+            <li><strong>System Architecture</strong>: Choose the architecture of your system (e.g., client-server, microservices).</li>
+        </ul>
+
+        <h2>3. Development Setup</h2>
+        <ul>
+            <li><strong>Tech Stack</strong>: Decide on the technologies you will use (e.g., React for frontend, Node.js for backend, PostgreSQL for database).</li>
+            <li><strong>Development Environment</strong>: Set up your development environment with necessary tools and libraries.</li>
+        </ul>
+
+        <h2>4. Frontend Development</h2>
+        <ul>
+            <li><strong>UI Components</strong>: Develop reusable UI components following the 42 design style.</li>
+            <li><strong>Pages and Navigation</strong>: Implement different pages like dashboard, student management, class schedules, etc.</li>
+            <li><strong>Responsive Design</strong>: Ensure the system is responsive and works well on different devices.</li>
+        </ul>
+
+        <h2>5. Backend Development</h2>
+        <ul>
+            <li><strong>API Design</strong>: Design RESTful APIs for all necessary functionalities.</li>
+            <li><strong>Database Integration</strong>: Implement database models and connect them with your backend.</li>
+            <li><strong>Authentication and Authorization</strong>: Implement user authentication and role-based access control.</li>
+        </ul>
+
+        <h2>6. Integration</h2>
+        <ul>
+            <li><strong>Frontend-Backend Integration</strong>: Connect your frontend with the backend APIs.</li>
+            <li><strong>Testing</strong>: Perform unit testing, integration testing, and end-to-end testing.</li>
+        </ul>
+
+        <h2>7. Deployment</h2>
+        <ul>
+            <li><strong>Server Setup</strong>: Set up your server infrastructure (e.g., using AWS, Heroku).</li>
+            <li><strong>CI/CD</strong>: Implement Continuous Integration and Continuous Deployment pipelines.</li>
+            <li><strong>Monitoring and Maintenance</strong>: Set up monitoring tools to keep track of the system's performance and errors.</li>
+        </ul>
+
+        <h2>8. Launch and Feedback</h2>
+        <ul>
+            <li><strong>Beta Testing</strong>: Launch a beta version to a small group of users and gather feedback.</li>
+            <li><strong>Iterate and Improve</strong>: Make necessary improvements based on feedback and launch the final version.</li>
+        </ul>
+
+        <div class="simplified-design">
+            <h2>Simplified Design for Development</h2>
+
+            <h3>1. Landing Page</h3>
             <ul>
-                <li>React (JSX)</li>
-                <li>Redux (State Management)</li>
-                <li>React Router (Routing)</li>
-                <li>Axios (API Calls)</li>
-                <li>Tailwind CSS (Styling)</li>
-                <li>Component Libraries (Material-UI)</li>
+                <li><strong>Purpose</strong>: Provide an overview of the system and login options.</li>
+                <li><strong>Components</strong>: Header, Features section, Login/Sign-up forms, Footer.</li>
+            </ul>
+
+            <h3>2. Dashboard</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Central hub for users to navigate to different sections.</li>
+                <li><strong>Components</strong>: Sidebar navigation, summary widgets (e.g., total students, upcoming events).</li>
+            </ul>
+
+            <h3>3. Student Management</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Manage student information and enrollment.</li>
+                <li><strong>Components</strong>: List of students, Add/Edit student forms, Search/Filter options.</li>
+            </ul>
+
+            <h3>4. Class Scheduling</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Manage class schedules and assignments.</li>
+                <li><strong>Components</strong>: Calendar view, List view, Add/Edit class forms.</li>
+            </ul>
+
+            <h3>5. Grade Management</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Record and view student grades.</li>
+                <li><strong>Components</strong>: Gradebook, Add/Edit grades forms, Report generation.</li>
+            </ul>
+
+            <h3>6. Attendance Tracking</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Track student attendance.</li>
+                <li><strong>Components</strong>: Attendance sheets, Add/Edit attendance forms, Attendance reports.</li>
+            </ul>
+
+            <h3>7. Communication</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Facilitate communication between teachers, students, and parents.</li>
+                <li><strong>Components</strong>: Messaging system, Notification system.</li>
             </ul>
         </div>
-        <div class="arrow">↓</div>
-        <div class="box">
-            <h2>Backend</h2>
-            <ul>
-                <li>Node.js (Runtime)</li>
-                <li>Express (Framework)</li>
-                <li>RESTful APIs</li>
-                <li>Authentication (JWT)</li>
-                <li>Role-Based Access</li>
-                <li>Data Validation</li>
-            </ul>
-        </div>
-        <div class="arrow">↓</div>
-        <div class="box">
-            <h2>Database</h2>
-            <ul>
-                <li>PostgreSQL (Relational)</li>
-                <li>Sequelize (ORM)</li>
-                <li>Data Models</li>
-                <li>Schema Design</li>
-            </ul>
-        </div>
-        <div class="arrow">↓</div>
-        <div class="box">
-            <h2>Server/Hosting</h2>
-            <ul>
-                <li>AWS/Heroku/DigitalOcean</li>
-                <li>Docker (Containerization)</li>
-                <li>Nginx (Reverse Proxy)</li>
-                <li>CI/CD Pipelines (GitHub Actions/Travis CI)</li>
-            </ul>
-        </div>
-        <div class="arrow">↓</div>
-        <div class="box">
-            <h2>Monitoring & Maintenance</h2>
-            <ul>
-                <li>Prometheus (Monitoring)</li>
-                <li>Grafana (Dashboard)</li>
-                <li>Sentry (Error Tracking)</li>
-                <li>Logging (Winston)</li>
-            </ul>
-        </div>
+        <button><a href="/map.html">go to map</a></button>
     </div>
 </body>
 </html>
