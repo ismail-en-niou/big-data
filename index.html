@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Stack Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            padding-top :2em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .box h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .box ul li {
+            padding: 5px 0;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 1.5em;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Frontend</h2>
+            <ul>
+                <li>React (JSX)</li>
+                <li>Redux (State Management)</li>
+                <li>React Router (Routing)</li>
+                <li>Axios (API Calls)</li>
+                <li>Tailwind CSS (Styling)</li>
+                <li>Component Libraries (Material-UI)</li>
+            </ul>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="box">
+            <h2>Backend</h2>
+            <ul>
+                <li>Node.js (Runtime)</li>
+                <li>Express (Framework)</li>
+                <li>RESTful APIs</li>
+                <li>Authentication (JWT)</li>
+                <li>Role-Based Access</li>
+                <li>Data Validation</li>
+            </ul>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="box">
+            <h2>Database</h2>
+            <ul>
+                <li>PostgreSQL (Relational)</li>
+                <li>Sequelize (ORM)</li>
+                <li>Data Models</li>
+                <li>Schema Design</li>
+            </ul>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="box">
+            <h2>Server/Hosting</h2>
+            <ul>
+                <li>AWS/Heroku/DigitalOcean</li>
+                <li>Docker (Containerization)</li>
+                <li>Nginx (Reverse Proxy)</li>
+                <li>CI/CD Pipelines (GitHub Actions/Travis CI)</li>
+            </ul>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="box">
+            <h2>Monitoring & Maintenance</h2>
+            <ul>
+                <li>Prometheus (Monitoring)</li>
+                <li>Grafana (Dashboard)</li>
+                <li>Sentry (Error Tracking)</li>
+                <li>Logging (Winston)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
