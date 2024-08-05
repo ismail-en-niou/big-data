@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            margin: 0;
+        }
+        .plan-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+        .developers {
+            margin-top: 20px;
+        }
+        .developers ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .phase-duration {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="plan-container">
+        <h1>Project Plan</h1>
+
+        <h2>Phase 1: Planning and Requirements Gathering (1 semaine)</h2>
+        <ul>
+            <li>Jour 1-2: Réunion de lancement, définition des objectifs, identification des rôles utilisateurs.</li>
+            <li>Jour 3-5: Collecte des exigences fonctionnelles et non fonctionnelles.</li>
+            <li>Jour 6-7: Validation des exigences avec les parties prenantes.</li>
+        </ul>
+
+        <h2>Phase 2: Design (2 semaines)</h2>
+        <ul>
+            <li>Jour 8-10: Création de wireframes et mockups de l'interface utilisateur.</li>
+            <li>Jour 11-13: Conception de la base de données.</li>
+            <li>Jour 14-15: Choix de l'architecture du système.</li>
+        </ul>
+
+        <h2>Phase 3: Development Setup (1 semaine)</h2>
+        <ul>
+            <li>Jour 16-18: Choix de la pile technologique.</li>
+            <li>Jour 19-21: Configuration de l'environnement de développement.</li>
+        </ul>
+
+        <h2>Phase 4: Frontend Development (4 semaines)</h2>
+        <ul>
+            <li>Jour 22-25: Développement des composants UI réutilisables.</li>
+            <li>Jour 26-30: Implémentation des pages de tableau de bord, gestion des étudiants, horaires de classe, etc.</li>
+            <li>Jour 31-35: Implémentation du design réactif.</li>
+            <li>Jour 36-42: Tests unitaires et corrections des bugs.</li>
+        </ul>
+
+        <h2>Phase 5: Backend Development (4 semaines)</h2>
+        <ul>
+            <li>Jour 43-45: Conception des API RESTful.</li>
+            <li>Jour 46-50: Intégration de la base de données.</li>
+            <li>Jour 51-55: Implémentation de l'authentification et du contrôle d'accès basé sur les rôles.</li>
+            <li>Jour 56-60: Tests unitaires et corrections des bugs.</li>
+        </ul>
+
+        <h2>Phase 6: Integration (2 semaines)</h2>
+        <ul>
+            <li>Jour 61-67: Intégration frontend-backend.</li>
+            <li>Jour 68-72: Tests d'intégration et correction des bugs.</li>
+        </ul>
+
+        <h2>Phase 7: Deployment (2 semaines)</h2>
+        <ul>
+            <li>Jour 73-75: Configuration du serveur et déploiement initial (AWS, Heroku).</li>
+            <li>Jour 76-78: Mise en place des pipelines CI/CD.</li>
+            <li>Jour 79-85: Configuration des outils de surveillance et maintenance.</li>
+        </ul>
+
+        <h2>Phase 8: Launch and Feedback (2 semaines)</h2>
+        <ul>
+            <li>Jour 86-91: Lancement de la version bêta pour un petit groupe d'utilisateurs.</li>
+            <li>Jour 92-98: Collecte des retours d'expérience et amélioration du système.</li>
+        </ul>
+
+        <h2>Phase 9: Levels, Points, and Bot Integration (4 semaines)</h2>
+        <ul>
+            <li>Jour 99-101: Conception et implémentation du système de niveaux et points.</li>
+            <li>Jour 102-107: Développement et intégration du bot de surveillance.</li>
+            <li>Jour 108-114: Tests du système de niveaux, points, et du bot.</li>
+            <li>Jour 115-120: Ajustements finaux et corrections des bugs.</li>
+        </ul>
+
+        <div class="developers">
+            <h2>Répartition des tâches entre les développeurs</h2>
+            <h3>Développeur 1</h3>
+            <ul>
+                <li>Frontend Development: Composants UI, pages, design réactif.</li>
+                <li>Integration: Connexion frontend-backend.</li>
+            </ul>
+
+            <h3>Développeur 2</h3>
+            <ul>
+                <li>Backend Development: Conception d'API, intégration de la base de données, authentification.</li>
+                <li>Deployment: Configuration du serveur, mise en place CI/CD.</li>
+            </ul>
+
+            <h3>Développeur 3</h3>
+            <ul>
+                <li>Database Design: Conception de la base de données.</li>
+                <li>Levels, Points, and Bot: Développement du système de niveaux et points, bot de surveillance.</li>
+                <li>Testing: Tests unitaires, d'intégration et d'acceptation.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
